@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .heading {
+    padding: 20px;
+    background-color: #273c75;
+    font-size: x-large;
+    color: white;
+}
+
+.container .tutorial {
+    list-style-type:none;
+    padding: 20px;
+    font-size: large;
+    background-color: white;
+}
+.container .tutorial li {
+    margin-bottom: 10px;
+}
+
+.container .game {
+    background-color: #192a56;
+    color: white;
+    padding: 20px;
+    display: grid;
+}
+
+.container .game h1 {
+    font-size: 3rem;
+}
+.container .game input {
+    padding: 20px 30px;
+    width: 50%;
+    font-size: xx-large;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.container .game button {
+    margin-inline: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 200px;
+    padding: 15px 20px;
+    font-size: large;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #0a1021;
+}
+.container .game button:hover {
+    background-color: #192a56;
+    color: white;
+}
+.container .game button:active {
+    background-color: #3353a1;
+}
+.container .game .utility {
+    font-size: large;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    font-size: medium;
+    margin-top: 15px;
+    background-color:#e58e26;
+    width: 70%;
+    margin-inline: auto;
+    display: none;
+}
+.guess-message {
+    padding: 12px;
+    background-color: #b71540;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 25px;
+    display: none;
+    margin: 0 auto;
+}
+
+.high-guess-message {
+    animation: highmessageAnimate 1s infinite ease-in-out alternate-reverse;
+}
+.low-guess-message {
+    animation: lowmessageAnimate 1s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes highmessageAnimate {
+    0%   {background-color: #eb2f06;width: 80%;}
+    25%  {background-color: #bb2807;width: 60%;}
+    50%  {background-color: #903a26; width: 80%;}
+    100% {background-color: #d71f1fbc;width: 60%;}
+}
+
+@keyframes lowmessageAnimate  {
+    0%   {background-color: #FFC312;width: 80%;}
+    25%  {background-color: #daa70e;width: 60%;}
+    50%  {background-color: #efd176; width: 80%;}
+    100% {background-color: #ceb159;width: 60%;}
+}
+
+.win-screen {
+    background-color: #009432;
+    padding: 150px 10px;
+    font-size: xx-large;
+    color: white;
+}
+.win-screen button {
+    padding: 15px 25px;
+    margin-top: 20px;
+    width: 50%;
+    border: 1px solid #009432;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.win-screen button:hover {
+    background-color: #009432;
+    border: 1px solid white;
+    color: white;
+}
+.win-screen button:active {
+    background-color: #067029;
+}
+
+.gameover-screen {
+    background-color: #EA2027;
+    padding: 150px 10px;
+    font-size: xx-large;
+    color: white;
+}
+.gameover-screen button {
+    padding: 15px 25px;
+    margin-top: 20px;
+    width: 50%;
+    border: 1px solid #EA2027;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.gameover-screen button:hover {
+    background-color: #EA2027;
+    border: 1px solid white;
+    color: white;
+}
+.gameover-screen button:active {
+    background-color: #EA2027;
+}
